@@ -480,8 +480,8 @@ For any questions, suggestions, or feedback, please contact:
 
 - **Nicolas Queiroga**
 - **Email:** nicolasqueiroga@me.com
-- **GitHub:** [yourusername](https://github.com/NicolasQueiroga)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/nicolasqueiroga/)
+- **GitHub:** [NicolasQueiroga](https://github.com/NicolasQueiroga)
+- **LinkedIn:** [Nicolas Queiroga](https://www.linkedin.com/in/nicolasqueiroga/)
 
 ---
 
