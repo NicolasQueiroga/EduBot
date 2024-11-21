@@ -1,19 +1,24 @@
 import streamlit as st
-from transformers import pipeline
 from prompts import scamper_prompts, six_hats_prompts
 import pandas as pd
-from huggingface_hub import login
-from builtins import FileNotFoundError
+from langchain_community.chat_models import ChatOpenAI
+from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
-login(token=os.getenv("HF_TOKEN"))
-generator = pipeline(
-    "text-generation",
-    model="meta-llama/Llama-2-7b-chat-hf",
-    device=0,
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if not openai_api_key:
+    st.error("OPENAI_API_KEY not found. Please set it in your environment variables.")
+    st.stop()
+
+llm = ChatOpenAI(
+    temperature=0.7,
+    model_name="gpt-4o-mini",
+    openai_api_key=openai_api_key,
+    max_tokens=100,
 )
+
 FEEDBACK_FILE = "feedback.csv"
 
 
@@ -59,10 +64,14 @@ if problem and st.button("Generate Ideas"):
     st.subheader(f"Ideas for '{problem}' using {framework}")
     for key, prompt in prompts.items():
         st.write(f"**{key}:** {prompt}")
-        idea = generator(prompt, max_length=50, num_return_sequences=1)[0][
-            "generated_text"
-        ]
-        st.write(f"- {idea}")
+
+        template = PromptTemplate(
+            input_variables=["prompt"],
+            template="{prompt}",
+        )
+        formatted_prompt = template.format(prompt=prompt)
+        response = llm.predict(formatted_prompt)
+        st.write(f"- {response}")
 
 st.subheader("Share Your Feedback")
 feedback_prompt = st.text_area("Which prompt or idea did you find most helpful?")
