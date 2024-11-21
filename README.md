@@ -1,116 +1,128 @@
-# **IdeaSpringboard: A Creative Ideation Tool**
+# EduBot: An AI-Powered Educational Assistant
 
-## **Overview**
-**IdeaSpringboard** is a user-friendly application that helps individuals and teams overcome creative blocks by generating actionable and innovative solutions to their challenges. Leveraging free Large Language Models (LLMs) and structured ideation frameworks like **SCAMPER** and **Six Thinking Hats**, IdeaSpringboard provides tailored prompts and ideas to spark creativity in solving real-world problems.
+## Project Overview
 
----
-
-## **Features**
-1. **Structured Creativity Frameworks**:
-   - **SCAMPER**: Helps explore ideas through prompts like Substitute, Combine, Adapt, Modify, Put to Another Use, Eliminate, and Reverse.
-   - **Six Thinking Hats**: Encourages diverse perspectives, focusing on facts, emotions, creativity, risks, and more.
-
-2. **Powered by LLMs**:
-   - Generates tailored and creative solutions to user-defined challenges.
-   - Utilizes free and open-source LLMs (e.g., GPT-based models) for idea generation.
-
-3. **Interactive User Experience**:
-   - Simple, intuitive interface for inputting challenges and generating ideas.
-   - Includes a feedback loop to refine solutions and improve system effectiveness.
-
-4. **Real-World Validation**:
-   - Collects user feedback to measure the impact of generated ideas.
-   - Provides actionable insights based on testing with real users.
+EduBot is a Natural Language Processing (NLP) application designed to enhance the learning and teaching experience by solving key pain points for educators and students. It leverages **Large Language Models (LLMs)** to provide innovative features, including conversational document interaction, automatic quiz generation, and flashcards creation. This project explores the potential of combining LLMs with user-centered design to address educational challenges creatively and effectively.
 
 ---
 
-## **Why IdeaSpringboard?**
-Many brainstorming tools exist, but most:
-- Lack structured approaches to creativity.
-- Generate generic ideas that aren’t actionable.
-- Don’t measure the real-world impact of their suggestions.
+## Objective and Goal
 
-IdeaSpringboard bridges these gaps by:
-- Combining **LLMs** with proven **ideation frameworks**.
-- Allowing users to test and validate solutions.
-- Ensuring meaningful outcomes through user-centric feedback.
+**Objective**: To demonstrate the effectiveness of LLMs in solving three critical pain points in education:
+1. Extracting meaningful insights from documents through conversational interaction.
+2. Automating the generation of quizzes based on specific topics from documents.
+3. Creating flashcards for active learning based on user-uploaded documents.
 
----
-
-## **How It Works**
-1. **Describe Your Problem**:
-   - Enter a challenge or problem you’re facing.
-   - Example: “How can I engage students better in online classes?”
-
-2. **Choose a Framework**:
-   - SCAMPER: Encourages exploration through structured prompts.
-   - Six Thinking Hats: Provides diverse perspectives for tackling the problem.
-
-3. **Generate Ideas**:
-   - The app uses LLMs to generate creative and tailored solutions based on your input and selected framework.
-
-4. **Evaluate and Improve**:
-   - Review and rate the generated ideas.
-   - Submit feedback to improve the tool.
+**Final Goal**: The project will be considered successful if:
+- EduBot receives positive feedback from at least **10 users** (educators/students) regarding its usability and effectiveness, measured through surveys.
+- The system achieves at least **85% accuracy** in generating contextually relevant quizzes and flashcards, evaluated through manual validation by subject matter experts.
 
 ---
 
-## **Getting Started**
-Follow these steps to run IdeaSpringboard locally:
+## Problem Statement
 
-### **1. Prerequisites**
-- Python 3.8+
-- Pip (Python package installer)
+Educators often spend hours designing quizzes and teaching aids, while students struggle to condense information into digestible formats. While tools like quiz makers or flashcard apps exist, they:
+- Require manual input, making them time-consuming.
+- Lack integration with AI for dynamic and efficient content generation.
+- Fail to provide contextual relevance when analyzing documents.
 
-### **2. Clone the Repository**
-```bash
-git clone https://github.com/your-repo/ideaspringboard.git
-cd ideaspringboard
-```
-
-### **3. Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-### **4. Run the Application**
-```bash
-streamlit run app.py
-```
-
-### **5. Access the App**
-Open the app in your browser at `http://localhost:8501`.
+EduBot bridges this gap by using state-of-the-art LLMs to automate these processes with minimal effort.
 
 ---
 
-## **Project Structure**
-```
-IdeaSpringboard/
-├── app.py             # Main application logic
-├── prompts.py         # Predefined SCAMPER and Six Thinking Hats prompts
-├── feedback.csv       # File for storing user feedback
-├── requirements.txt   # Python dependencies
-├── README.md          # Project documentation
-```
+## Research on Existing Work
+
+### Related Tools
+1. **Quizlet**: Flashcard creation platform but requires manual content input.
+2. **Google Forms with Add-ons**: Facilitates quiz creation but lacks automation and relevance to uploaded documents.
+3. **ChatGPT**: Provides conversational capabilities but lacks a dedicated educational workflow and user interface for focused features.
+
+### Why EduBot is Unique
+EduBot:
+- Combines conversational AI with document analysis, enabling interactive learning.
+- Provides a **unified platform** for quizzes, flashcards, and document interaction.
+- Automates tedious processes while ensuring **contextual relevance** of output.
 
 ---
 
-## **Technologies Used**
-1. **Python**:
-   - Application logic and backend processing.
-2. **Hugging Face Transformers**:
-   - LLM integration for generating creative ideas.
-3. **Streamlit**:
-   - Web-based interactive user interface.
-4. **Pandas**:
-   - Feedback storage and analysis.
+## Features
+
+1. **Chat with Your Data**: Upload PDFs and interact with their content using AI-powered queries.
+2. **Quiz Generator**: Automatically generate multiple-choice quizzes based on user-specified topics within documents.
+3. **Flashcards Generator**: Create concise, topic-focused flashcards for active learning.
 
 ---
 
-## **Deliverables**
-1. **Research Report**:
-   - A detailed analysis of existing tools and how IdeaSpringboard addresses their limitations.
-   - Metrics and insights from real-world user testing.
+## Implementation
 
-2. **Video Pitch**:
-   - A 3-minute video demonstrating the tool, its features, and its impact on solving real user problems.
+### Technical Stack
+- **Frontend**: Streamlit for a responsive user interface.
+- **Backend**: OpenAI GPT-4 APIs via LangChain for NLP capabilities.
+- **Document Handling**: LangChain Document Loaders for PDF parsing.
+- **Data Storage**: FAISS for vector-based document retrieval.
+
+### Measurable Impact
+- User feedback via surveys.
+- Quiz and flashcard accuracy validation by experts.
+
+---
+
+## How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/EduBot.git
+   cd EduBot
+   ```
+
+2. Set up the environment:
+   ```bash
+   python3 -m venv env
+   source env/bin/activate   # On Windows: .\env\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+3. Set your OpenAI API Key:
+   - Create a `.env` file in the root directory.
+   - Add your API key:
+     ```
+     OPENAI_API_KEY=your_openai_api_key
+     ```
+
+4. Run the application:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+---
+
+## Evaluation and Results
+
+### Metrics for Success
+1. **User Feedback**: At least **85% positive ratings** from 10+ users on usability, measured through post-use surveys.
+2. **Accuracy of Outputs**:
+   - **Quizzes**: 85%+ relevance of generated questions to topics.
+   - **Flashcards**: 85%+ correctness and relevance to user-provided topics.
+
+### Validation Methodology
+- Quizzes and flashcards will be validated by two subject matter experts.
+- Users will rate the system on ease of use, time-saving, and educational impact.
+
+---
+
+## Deliverables
+
+1. **Code**: Complete implementation uploaded to GitHub.
+2. **Documentation**: This README, and a brief report comparing EduBot to existing tools and its impact.
+3. **Video Pitch**: A 3-minute video showcasing EduBot’s features, its problem-solving potential, and user feedback.
+
+---
+
+## Acknowledgments
+
+EduBot is powered by:
+- **OpenAI GPT-4**: Core NLP engine for content generation.
+- **LangChain**: Document parsing and retrieval infrastructure.
+- **Streamlit**: User interface development.
+
+Special thanks to the participants who provided feedback and validated the outputs.
