@@ -1,5 +1,7 @@
 # EduBot: An AI-Powered Educational Assistant
 
+> Made by Nicolas Queiroga and Henrique Frezzatti as part of the Natural Language Processing course at Insper.
+
 ## Project Overview
 
 EduBot is a Natural Language Processing (NLP) application designed to enhance the learning and teaching experience by solving key pain points for educators and students. It leverages **Large Language Models (LLMs)** to provide innovative features, including conversational document interaction, automatic quiz generation, and flashcards creation. This project explores the potential of combining LLMs with user-centered design to address educational challenges creatively and effectively.

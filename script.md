@@ -1,6 +1,6 @@
 ### **[Introdução: 0:00 - 0:30]**
 **Texto:**
-"Olá! Meu nome é Nicolas Queiroga e hoje eu vou apresentar o EduBot, um projeto desenvolvido por mim e Henrique Frezatti como parte do curso de Processamento de Linguagem Natural no Insper. O EduBot é uma aplicação que combina a potência de modelos de linguagem de última geração com uma interface intuitiva, resolvendo problemas críticos enfrentados por educadores e estudantes. Nosso objetivo? Facilitar o aprendizado e o ensino de forma prática e eficiente."
+"Olá! Meu nome é Nicolas Queiroga e hoje eu vou apresentar o EduBot, um projeto desenvolvido por mim e Henrique Frezzatti como parte do curso de Processamento de Linguagem Natural no Insper. O EduBot é uma aplicação que combina a potência de modelos de linguagem de última geração com uma interface intuitiva, resolvendo problemas críticos enfrentados por educadores e estudantes. Nosso objetivo? Facilitar o aprendizado e o ensino de forma prática e eficiente."
 
 ---
 
