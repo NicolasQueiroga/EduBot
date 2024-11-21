@@ -18,10 +18,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add three columns
 col1, col2, col3 = st.columns(3)
 
-# Column 1: Chat with Your Data
 with col1:
     st.markdown(
         """
@@ -36,7 +34,6 @@ with col1:
         use_container_width=True,
     )
 
-# Column 2: Quiz Generator
 with col2:
     st.markdown(
         """
@@ -51,7 +48,6 @@ with col2:
         use_container_width=True,
     )
 
-# Column 3: Flashcards Generator
 with col3:
     st.markdown(
         """
