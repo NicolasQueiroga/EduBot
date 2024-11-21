@@ -13,7 +13,7 @@ if not openai_api_key:
     st.stop()
 
 llm = ChatOpenAI(
-    temperature=0.7,
+    temperature=0.5,
     model_name="gpt-4o-mini",
     openai_api_key=openai_api_key,
     max_tokens=100,
