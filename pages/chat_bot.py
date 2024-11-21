@@ -77,7 +77,6 @@ llm = ChatOpenAI(
     temperature=0.7,
     model_name="gpt-4o-mini",
     openai_api_key=openai_api_key,
-    max_tokens=200,
 )
 
 embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)

@@ -59,9 +59,9 @@ def generate_quiz(text, topic):
         input_variables=["text", "topic"],
         template=(
             "Based on the following content:\n\n{text}\n\n"
-            "Create a quiz with 5 multiple-choice questions on the topic of '{topic}'. "
+            "Create a quiz with 15 multiple-choice questions on the topic of '{topic}'. "
             "Each question should have 4 answer options and the correct answer marked. "
-            "Make sure the questions are relevant to the topic and are of moderate difficulty. "
+            "Make sure the questions are relevant to the topic and are of high difficulty. "
             "Provide the correct answer in brackets like this: [Correct Answer: Option X]."
         ),
     )
@@ -101,12 +101,10 @@ if uploaded_file:
                 st.success("Quiz generated successfully!")
                 st.write(quiz)
 
-                # Convert quiz text to a downloadable format
                 quiz_bytes = BytesIO()
                 quiz_bytes.write(quiz.encode("utf-8"))
                 quiz_bytes.seek(0)
 
-                # Add a download button for the quiz
                 st.download_button(
                     label="Download Quiz",
                     data=quiz_bytes,
