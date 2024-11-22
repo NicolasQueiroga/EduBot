@@ -100,20 +100,6 @@ EduBot:
 
 ---
 
-## Evaluation and Results
-
-### Metrics for Success
-1. **User Feedback**: At least **85% positive ratings** from 10+ users on usability, measured through post-use surveys.
-2. **Accuracy of Outputs**:
-   - **Quizzes**: 85%+ relevance of generated questions to topics.
-   - **Flashcards**: 85%+ correctness and relevance to user-provided topics.
-
-### Validation Methodology
-- Quizzes and flashcards will be validated by two subject matter experts.
-- Users will rate the system on ease of use, time-saving, and educational impact.
-
----
-
 ## Deliverables
 
 1. **Code**: Complete implementation uploaded to GitHub.
