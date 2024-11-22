@@ -2,6 +2,12 @@
 
 > Made by Nicolas Queiroga and Henrique Frezzatti as part of the Natural Language Processing course at Insper.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mMhsmGD8smk"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+
+[Pitch Video](https://youtu.be/mMhsmGD8smk)
+
 ## Project Overview
 
 EduBot is a Natural Language Processing (NLP) application designed to enhance the learning and teaching experience by solving key pain points for educators and students. It leverages **Large Language Models (LLMs)** to provide innovative features, including conversational document interaction, automatic quiz generation, and flashcards creation. This project explores the potential of combining LLMs with user-centered design to address educational challenges creatively and effectively.
