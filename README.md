@@ -1,6 +1,6 @@
 # EduBot: An AI-Powered Educational Assistant
 
-> Made by Nicolas Queiroga and Henrique Frezzatti as part of the Natural Language Processing course at Insper.
+> Made by Nicolas Queiroga and Henrique Martinelli Frezzatti as part of the Natural Language Processing course at Insper.
 ---
 ## [Pitch Video](https://youtu.be/mMhsmGD8smk)
 ---
